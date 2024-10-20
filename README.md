@@ -1,4 +1,4 @@
-# Web-based Hospital Management System
+# Hospital Management System (HMS)
 
 ## Overview
 This project aims to develop a comprehensive and user-friendly web-based hospital management system designed to streamline core patient care processes. Utilizing a combination of modern web technologies, the system focuses on improving operational efficiency, data security, and accessibility in hospital management.
