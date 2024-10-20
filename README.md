@@ -72,7 +72,7 @@ To instialize demo data for the website, follow these steps:
 
 (NOTE:- You can only login if the demo data is initialized. Leter on you can create new users as admin.)
 
-# Your Project Title
+
 
 ## Video Presentation
 You can watch the video presentation [here](https://drive.google.com/file/d/153eCjxpCWm2arwxVJBuWwNPKj26etE-i/view?usp=sharing).
