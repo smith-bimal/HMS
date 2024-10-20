@@ -72,3 +72,4 @@ To instialize demo data for the website, follow these steps:
 
 (NOTE:- You can only login if the demo data is initialized. Leter on you can create new users as admin.)
 
+*For any further queries or feedback, please contact me at the email address golokbihareebeemal@gmail.com.
