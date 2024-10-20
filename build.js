@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Directory paths
-const viewsDir = path.join(__dirname, 'views');
+const viewsDir = path.join(__dirname, 'templates/views');
 const outputDir = path.join(__dirname, 'output');
 
 // Ensure the output directory exists
