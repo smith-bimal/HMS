@@ -95,7 +95,7 @@ app.get('*', (req, res) => {
 });
 
 // port listening console log
-app.listen(5000, () => {
+app.listen(3030, () => {
     console.log("Port is listening on port 5000");
 });
 
