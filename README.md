@@ -63,11 +63,11 @@ To instialize demo data for the website, follow these steps:
 
 ## Default login credentials
 1. Admin:-
-   username: admin
+   username: admin,
    password: 12345678
 
 2. Doctor:-
-   email: maya.iyer@hms.com
+   email: maya.iyer@hms.com,
    password: 12345678
 
 (NOTE:- You can only login if the demo data is initialized. Leter on you can create new users as admin.)
