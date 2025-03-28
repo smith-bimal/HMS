@@ -12,8 +12,6 @@ const MongoStore = require('connect-mongo');
 //database files acquiring
 require("./src/db/conn");
 
-const config = require('./config/config');
-
 const loginRouter = require("./routes/loginRoutes");
 const adminRouter = require("./routes/admin");
 const doctorRouter = require("./routes/doctor");
@@ -45,7 +43,7 @@ store.on("error", (err) => {
 // Configure express-session middleware
 app.use(session({
     store,
-    secret: process.env.SECRET, // Use the secret key from your config
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {
@@ -59,7 +57,7 @@ app.use(session({
 // Middleware to log all requests
 app.use((req, res, next) => {
     const logDetails = `${new Date().toISOString()} - ${req.method} ${req.originalUrl} - ${req.ip}\n`;
-    fs.appendFile(path.join(__dirname, 'log.txt'), logDetails, (err) => {
+    fs.appendFile(path.join(__dirname, 'access.log'), logDetails, (err) => {
         if (err) {
             console.error("Failed to write to log file:", err);
         }
@@ -77,7 +75,6 @@ app.use((req, res, next) => {
     next();
 });
 
-
 app.get("/", (req, res) => {
     res.render("index");
 });
@@ -94,8 +91,7 @@ app.get('*', (req, res) => {
     res.render("404", { userType });
 });
 
-// port listening console log
-app.listen(3030, () => {
+app.listen(5000, () => {
     console.log("Port is listening on port 5000");
 });
 

@@ -1,5 +1,5 @@
 const config = {
-    secret_key: "IamSmith&ThisIsMySecretKey",
+    secret_key: "DEMO_SECRET_KEY",
 }
 
 module.exports = config;

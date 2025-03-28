@@ -1,15 +1,13 @@
 const Admin = require("../src/models/adminModel");
 const Doctor = require("../src/models/docModel");
 
-const nodemailer = require('nodemailer');
-
 //Function to fetch logged in doctor information
 async function fetchAdminDetails(userEmail) {
-    let admin = await Admin.findOne({ email: userEmail });
-    if (!admin) {
-        admin = await Doctor.findOne({ email: userEmail });
+    let user = await Admin.findOne({ email: userEmail });
+    if (!user) {
+        user = await Doctor.findOne({ email: userEmail });
     }
-    return admin;
+    return user;
 };
 
 //Function to fetch logged in doctor information

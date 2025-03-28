@@ -12,7 +12,7 @@ function isAdminOrDoctor(req, res, next) {
     }
 
     try {
-        const data = jwt.verify(token, config.secret_key);
+    const data = jwt.verify(token, process.env.JWT_SECRET);
         if (data.role !== 'admin' && data.role !== 'doctor') {
             return res.status(403).redirect('/login');
         }
@@ -34,7 +34,7 @@ async function isAuthenticated(req, res, next) {
     }
 
     try {
-        const data = jwt.verify(token, config.secret_key);
+        const data = jwt.verify(token, process.env.JWT_SECRET);
         if (data.role === 'admin') {
             const admin = await fetchAdminDetails(data.email);
             if (admin) {
@@ -84,7 +84,7 @@ function  isLoggedIn(requiredRole) {
         }
 
         try {
-            const data = jwt.verify(token, config.secret_key);
+            const data = jwt.verify(token, process.env.JWT_SECRET);
             if (data.role !== requiredRole) {
                 return res.status(403).redirect('/login');
             }

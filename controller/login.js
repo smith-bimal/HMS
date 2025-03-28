@@ -1,6 +1,6 @@
 const Admin = require('../src/models/adminModel');
 const Doctor = require('../src/models/docModel');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 module.exports.renderLogin = (req, res) => {
