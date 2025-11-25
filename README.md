@@ -22,11 +22,11 @@ The system encompasses a comprehensive suite of functionalities designed to opti
 
 ### Features
 - **Patient Registration**: A user-friendly interface for efficient patient registration, capturing demographics, insurance details, and medical history.
-  
+
 - **Appointment Scheduling**: Streamlined scheduling for in-person and virtual consultations to minimize wait times and enhance patient experience.
-  
+
 - **Electronic Health Records (EHR)**: A secure platform for managing patient medical records, including clinical notes, prescriptions, lab results, and imaging reports, accessible to authorized personnel.
-  
+
 - **Inventory Control**: Real-time management of medical supplies and pharmaceuticals, ensuring optimal stock levels and minimizing waste.
 
 ## Technologies Used
@@ -64,7 +64,7 @@ To instialize demo data for the website, follow these steps:
 ## Default login credentials
 1. Admin:-
    username: admin,
-   password: 12345678
+   password: 123456789
 
 2. Doctor:-
    email: maya.iyer@hms.com,
